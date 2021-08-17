@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/game.css">
+
+    <title>Game</title>
+</head>
+
+<body>
+    <div id="chances">
+        <h2>Chances left:</h2>
+    </div>
+    <div id="number-div" class='selected-number-div'>
+        <h2>Rules of the game</h2>
+        <h3>
+            <ul>
+                <li>Select a number between 1 and 10<sup>6</sup></li>
+                <li>Doofishmertz will guess the number within 20 chances</li>
+                <li>In case, the guessed number is greater than your number, press left button or right button
+                    accordingly</li>
+            </ul>
+        </h3>
+    </div>
+    <div id="game-opener" class="selected-number-div">
+        <h2>Dr Doofishmertz selected:</h2>
+        <h1 id="selected-number"> number </h1>
+    </div>
+    <div id="button-panel">
+        <button id="less" class="glow-on-hover" type="button" onclick="decreaseChances(),decrease()">No!! Too
+            Bigg!!</button>
+        <button id="equal" class="glow-on-hover" type="button" onclick="start()">Start</button>
+        <button id="more" class="glow-on-hover" type="button" onclick="decreaseChances(),increase()">Nahh!! Too
+            Small!!</button>
+    </div>
+</body>
+<script src="js/game.js"></script>
+
+</html>
