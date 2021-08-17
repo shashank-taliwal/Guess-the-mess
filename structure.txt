@@ -1,0 +1,5 @@
+Structure of this website;
+components of the website:
+1. A landing page saying hello
+2. Game start page
+3. Play again page
